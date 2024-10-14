@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doraemon's Gadget Hunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Doraemon's Gadget Hunt</h1>
+        <p>Doraemon has misplaced his gadgets! Help Nobita find them before Gian and Suneo do.</p>
+        <p id="turns">Turns left: 5</p>
+        <div class="locations">
+            <button onclick="searchLocation(0)">Search Nobita's House</button>
+            <button onclick="searchLocation(1)">Search School</button>
+            <button onclick="searchLocation(2)">Search Park</button>
+        </div>
+        <div id="summary" class="hidden">
+            <h2>Summary of your adventure:</h2>
+            <p id="gadgets-found"></p>
+            <div id="result-message" class="hidden"></div>
+            <button id="new-game" onclick="resetGame()" class="hidden">New Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
