@@ -1,0 +1,191 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+:root {
+    --sky-blue: #87CEEB; /* Sky blue */
+    --dark-sky: #4682B4; /* Darker variant of sky blue */
+    --white: #ffffff;
+    --gray: #f4f4f4;
+}
+
+body {
+    background-color: var(--gray);
+}
+
+.header {
+    background-color: var(--sky-blue);
+    padding: 1rem;
+    color: var(--dark-sky);
+    position: fixed;  /* Fix the navbar at the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000;    /* Ensure it stays on top */
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 50px; /* Adjust the height as needed */
+    width:50px;  /* Maintains the aspect ratio of the logo */
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header nav ul li {
+    margin-right: 1rem;
+}
+
+.header nav ul li a {
+    color: var(--dark-sky);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: var(--white);
+}
+
+.hero-content {
+    text-align: center;
+    color: var(--white);
+    background: url('banner-img.jpg') center/cover no-repeat;
+    padding: 100px 20px;
+    background-blend-mode: overlay;
+    background-color: var(--sky-blue);
+    margin-top: 70px; /* To avoid overlapping with the fixed navbar */
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content .btn {
+    background: var(--dark-sky);
+    color: var(--white);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+text-decoration: none;
+
+}
+
+.hero-content .btn:hover {
+    background: var(--white);
+    color: var(--dark-sky);
+}
+
+.services, .about, .contact {
+    background: var(--white);
+    padding: 5rem 1rem;
+}
+
+.portfolio {
+    background: var(--gray);
+    padding: 3rem 1rem;
+}
+
+.portfolio-gallery {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: calc(33.333% - 1rem);
+    background: var(--white);
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: 70%;
+    border-radius: 5px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.service-item {
+    background: var(--gray);
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+}
+
+.service-item img {
+    width: 100%;            /* Full width of the container */
+    height: 300px;         /* Fixed height */
+    object-fit: cover;     /* Ensures proper scaling */
+    border-radius: 5px;    /* Optional */
+}
+
+.about-img {
+    max-width: 50%;
+    height: 10%;
+   
+    border-radius: 5px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact form input, .contact form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background: var(--dark-sky);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background: var(--white);
+    color: var(--dark-sky);
+}
+
+.footer {
+    background-color: var(--sky-blue);
+    color: var(--dark-sky);
+    text-align: center;
+    padding: 1rem 0;
+}

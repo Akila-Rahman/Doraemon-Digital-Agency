@@ -3,26 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doraemon's Gadget Hunt</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Doraemon Digital Agency</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="game-container">
-        <h1>Doraemon's Gadget Hunt</h1>
-        <p>Doraemon has misplaced his gadgets! Help Nobita find them before Gian and Suneo do.</p>
-        <p id="turns">Turns left: 5</p>
-        <div class="locations">
-            <button onclick="searchLocation(0)">Search Nobita's House</button>
-            <button onclick="searchLocation(1)">Search School</button>
-            <button onclick="searchLocation(2)">Search Park</button>
+
+    <header class="header">
+        <div class="container">
+            <a href="#">
+            <img src="logo.png" alt="Doraemon Digital Agency Logo" class="logo">
+        </a>
+            <h1>Doraemon Digital Agency</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div id="summary" class="hidden">
-            <h2>Summary of your adventure:</h2>
-            <p id="gadgets-found"></p>
-            <div id="result-message" class="hidden"></div>
-            <button id="new-game" onclick="resetGame()" class="hidden">New Game</button>
+    </header>
+
+    <section class="hero-content">
+        <h2>Welcome to Doraemon Digital Agency</h2>
+        <p>Your digital transformation starts here.</p>
+        <a href="#services" class="btn">Explore Our Services</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <img src="image-1.jpg" alt="Service 1">
+                <h3>Web Development</h3>
+                <p>Responsive and modern websites tailored to your business needs, ensuring seamless user experiences across devices.</p>
+            </div>
+            <div class="service-item">
+                <img src="image-2.jpg" alt="Service 2">
+                <h3>SEO Optimization</h3>
+                <p>Boost your online presence with our expert SEO strategies, driving more traffic to your site and increasing your visibility on search engines.</p>
+            </div>
+            <div class="service-item">
+                <img src="image-3.jpg" alt="Service 3">
+                <h3>Digital Marketing</h3>
+                <p>Our data-driven digital marketing campaigns help you reach your audience effectively, increasing engagement and conversions.</p>
+            </div>
         </div>
-    </div>
+    </section>
+
+        <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Our Work</h2>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">
+                    <img src="image-4.jpg" alt="Project 1">
+                    <h3>E-commerce Website</h3>
+                    <p>Built a fully responsive and customized e-commerce platform, integrating payment gateways and advanced user features.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="image-5.jpg" alt="Project 2">
+                    <h3>SEO Strategy for Tech Blog</h3>
+                    <p>Implemented a comprehensive SEO strategy, resulting in a 40% increase in organic traffic within three months.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="image-6.jpg" alt="Project 3">
+                    <h3>Social Media Campaign</h3>
+                    <p>Designed and executed a social media campaign that significantly boosted brand awareness and engagement across platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <img src="image-7.jpg" alt="Our Team" class="about-img">
+            <p>Doraemon Digital Agency is a team of passionate digital experts dedicated to transforming your online presence. With years of experience in web development, SEO, and digital marketing, we bring a personalized approach to every project, ensuring that your brand stands out in the digital landscape.</p>
+            <p>Our mission is to empower businesses to achieve their digital goals with innovative solutions and creative strategies. Let us help you reach new heights in the digital world.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Doraemon Digital Agency. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
